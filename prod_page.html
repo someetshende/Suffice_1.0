@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product page </title>
+    <link rel="stylesheet" href="Styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com">
+
+    </script>
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+          <img src="Images/Logo.jpg" alt="xyz" width="10%">
+          <span class="ml-3 text-xl">Suffice</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-white">Home</a>
+          <a class="mr-5 hover:text-white">Features</a>
+          <a class="mr-5 hover:text-white">How it works?</a>
+          <a class="mr-5 hover:text-white">Connect</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =============================== * product img * ============================================ -->
+    <section class="text-gray-600 body-font overflow-hidden" id="Section_change">
+
+    </section>
+
+    <!-- =============================== * more-products * ============================================ -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.pepperamundo.com/wp-content/uploads/2019/01/IMG_1297.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Clothing</h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">Tuxedo</h2>
+              <p class="mt-1">Rs.250</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://bookaddicts.in/wp-content/uploads/2021/07/121612774_156403032824338_4224669156390607557_n.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Books</h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">Harry Potter Books Set</h2>
+              <p class="mt-1">Rs.10/day.</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://5.imimg.com/data5/SELLER/Default/2021/1/FS/UZ/MY/68273674/1000w-electric-iron-press-500x500.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Electronics</h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">Iron</h2>
+              <p class="mt-1">Rs.20/hour.</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJzHAKxgwNqTF-9j-DoocFz-WQ1cVXl_BDpQ&usqp=CAU">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Footwear</h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">Formal Shoes</h2>
+              <p class="mt-1">Rs.100/day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+
+    <a href="https://www.instagram.com" class="social-icons fa-brands fa-instagram" ></a>
+    <a href="https://www.facebook.com" class="social-icons fa-brands fa-facebook" ></a>
+    <a href="https://www.twitter.com" class="social-icons fa-brands fa-twitter" ></a>
+    <a href="https://www.gmail.com" class="social-icons fa-solid fa-envelope" ></a>
+
+    <p>© Copyright Suffice</p>
+
+   </footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        //  =============================== * navbar * ============================================
+
+        let contry = document.getElementById('contry');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted')
+        });
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+        });
+        function languageolx(anyone) {
+            eng_tag.innerHTML = anyone;
+        }
+
+        let girl_img_id = document.getElementById('girl_img_id');
+        let gropdwonid = document.getElementById('gropdwonid');
+
+        girl_img_id.addEventListener('click', () => {
+            gropdwonid.classList.toggle('block_div')
+        });
+
+        const swiper = new Swiper('.swiper', {
+
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+
+    </script>
+    <script>
+      const res = {
+        'Product_Name' : 'JBL Speaker',
+        'Product_Category': 'Speaker',
+        'Price': 'Rs.25/hour',
+        'Description' : 'Computer speakers, or multimedia speakers, are speakers sold for use with computers, although usually capable of other audio uses, e.g. for an MP3 player.',
+        'Link' : 'https://i.pinimg.com/564x/f6/a1/8d/f6a18d19e051a236ad612b1046f7ce43.jpg'
+      };
+      function elementFromHtml(html){
+        const template = document.createElement("template");
+        template.innerHTML = html.trim();
+        return template.content.firstElementChild;
+      }
+
+      const xyz = elementFromHtml(`<div class="container px-5 py-24 mx-auto">
+        <div class="lg:w-4/5 mx-auto flex flex-wrap">
+          <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-64 object-cover object-center rounded" src="` + res.Link +`">
+          <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <h2 class="text-sm title-font text-gray-500 tracking-widest">` + res.Product_Category + `</h2>
+            <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">` + res.Product_Name + `</h1>
+            <div class="flex mb-4">
+                <span class="text-gray-600 ml-3"></span>No Reviews</span>
+              </span>
+            </div>
+            <p class="leading-relaxed">` + res.Description + `</p>
+            <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            </div>
+            <div class="flex">
+              <span class="title-font font-medium text-2xl text-gray-900">` + res.Price + `</span>
+              <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Rent</button>
+            </div>
+          </div>
+        </div>
+      </div>`);
+      const rem = document.getElementById("Section_change");
+      rem.appendChild(xyz);
+
+    </script>
+</body>
+
+</html>

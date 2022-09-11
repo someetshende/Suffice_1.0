@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles1.css">
+    <link rel="stylesheet" href="Styles3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <title>Suffice - A fullstop solution.</title>
+    <script src="https://cdn.tailwindcss.com">
+
+        let contry = document.getElementById('contry');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted')
+        });
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+        });
+        function languageolx(anyone) {
+            eng_tag.innerHTML = anyone;
+        }
+
+        let girl_img_id = document.getElementById('girl_img_id');
+        let gropdwonid = document.getElementById('gropdwonid');
+
+        girl_img_id.addEventListener('click', () => {
+            gropdwonid.classList.toggle('block_div')
+        });
+
+    </script>
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+          <img src="Images/Logo.jpg" alt="xyz" width="10%">
+          <span class="ml-3 text-xl">Suffice</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a href = "#home_1"class="mr-5 hover:text-white">Home</a>
+          <a href = "#features_1"class="mr-5 hover:text-white">Features</a>
+          <a href="#product_1" class="mr-5 hover:text-white">Products</a>
+          <a href="file:///F:/COMP-A-THON%20Project/how_it/index.html" class="mr-5 hover:text-white">How it works?</a>
+        </nav>
+
+      </div>
+    </header>
+      <!-- =============================== * sell-page * ============================================ -->
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div class="md:h-80 flex flex-col sm:flex-row bg-gray-900 rounded-lg overflow-hidden">
+            <!-- content - start -->
+            <div class="w-full sm:w-1/2 lg:w-2/5 flex flex-col p-4 sm:p-8">
+              <h2 class="text-white text-xl md:text-2xl lg:text-4xl font-bold mb-4">SUFFICE<br />Yearn - Earn - Return.</h2>
+
+              <p class="max-w-md text-gray-400 mb-8">A rental system platform fulfilling short term needs by enhancing cost cutting.</p>
+
+              <div class="mt-auto">
+                <a href="F:\COMP-A-THON Project\Add_Product.html" class="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">List an Item.</a>
+              </div>
+            </div>
+            <!-- content - end -->
+
+            <!-- image - start -->
+            <div class="w-full sm:w-1/2 lg:w-3/5 h-48 sm:h-auto order-first sm:order-none bg-gray-700">
+
+             <img src="https://s7d9.scene7.com/is/image/NewellRubbermaid/DC-32694_Rubbermaid%20Commercial_HP%20Banner_Garage_Desktop_v1?fmt=jpeg" loading="lazy" alt="Photo by Dom Hill" class="w-full h-full object-cover object-center" />
+            </div>
+            <!-- image - end -->
+          </div>
+        </div>
+      </div>
+
+
+    <!-- =============================== * features * ============================================ -->
+    <section id = "features_1" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Why choose us?</h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">We aim to connect peole in need to people who need. </p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Verified Users</h2>
+              <p class="leading-relaxed text-base">All users go through a process of verification before being able to rent/lend products.</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Assured Products</h2>
+              <p class="leading-relaxed text-base">Products go through a process of verification. A minimum of 5 images as well as a video are uploaded to gurantee the legitamacy of the product.</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Secure</h2>
+              <p class="leading-relaxed text-base">We provide a secure network between the lender and the borrower through an encrypted chat box.</p>
+            </div>
+          </div>
+        </div>
+        <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="file:///F:/COMP-A-THON%20Project/how_it/index.html">How It Works ?</a></button>
+      </div>
+    </section>
+    <!-- =============================== * product * ============================================ -->
+    <section  class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4" id="product_1">
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+
+    <a href="https://www.instagram.com" class="social-icons fa-brands fa-instagram" ></a>
+    <a href="https://www.facebook.com" class="social-icons fa-brands fa-facebook" ></a>
+    <a href="https://www.twitter.com" class="social-icons fa-brands fa-twitter" ></a>
+    <a href="https://www.gmail.com" class="social-icons fa-solid fa-envelope" ></a>
+
+    <p>© Copyright Suffice</p>
+
+   </footer>
+   <script>
+   const res1 = {
+     'Product_Name' : 'JBL Speaker',
+     'Product_Category': 'Electronics',
+     'Price': 'Rs.25/hour',
+     'Description' : '',
+     'Link' : 'https://i.pinimg.com/564x/f6/a1/8d/f6a18d19e051a236ad612b1046f7ce43.jpg'
+   };
+   const res2 = {
+     'Product_Name' : 'Guitar',
+     'Product_Category': 'Musical Instrument',
+     'Price': 'Rs.100/hour',
+     'Description' : '',
+     'Link' : 'https://i.pinimg.com/564x/fe/0a/b6/fe0ab658b3f9bf192357856f42d1f418.jpg'
+   };
+   const res3 = {
+     'Product_Name' : 'Tuxedo',
+     'Product_Category': 'Clothing',
+     'Price': 'Rs.250/day',
+     'Description' : '',
+     'Link' : 'https://www.pepperamundo.com/wp-content/uploads/2019/01/IMG_1297.jpg'
+   };
+   const res4 = {
+     'Product_Name' : 'Shoes',
+     'Product_Category': 'Footwere',
+     'Price': 'Rs.100/day',
+     'Description' : '',
+     'Link' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJzHAKxgwNqTF-9j-DoocFz-WQ1cVXl_BDpQ&usqp=CAU'
+   };
+   const res5 = {
+     'Product_Name' : 'Iron',
+     'Product_Category': 'Electrical Appliance',
+     'Price': 'Rs.20/hour',
+     'Description' : '',
+     'Link' : 'https://5.imimg.com/data5/SELLER/Default/2021/1/FS/UZ/MY/68273674/1000w-electric-iron-press-500x500.jpg'
+   };
+   const res6 = {
+     'Product_Name' : 'Harry Potter Book Set',
+     'Product_Category': 'Books',
+     'Price': 'Rs.40/day',
+     'Description' : '',
+     'Link' : 'https://bookaddicts.in/wp-content/uploads/2021/07/121612774_156403032824338_4224669156390607557_n.jpg'
+   };
+   const res7 = {
+     'Product_Name' : 'Dell Monitor',
+     'Product_Category': 'Electrical Appliance',
+     'Price': 'Rs.100/day',
+     'Description' : '',
+     'Link' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNbRaB39hXfdtWqSKF4L5tcqH0OB2THoXvJA&usqp=CAU'
+   };
+   const res8 = {
+     'Product_Name' : 'Electric Kettle',
+     'Product_Category': 'Electrical Appliance',
+     'Price': 'Rs.30/day',
+     'Description' : '',
+     'Link' : 'https://www.expatriates.com/img/51176993.1.jpg'
+   };
+   const prods =[res1, res2, res3 ,  res4,  res5,  res6, res7 , res8];
+    function elementFromHtml(html){
+        const template = document.createElement("template");
+        template.innerHTML = html.trim();
+        return template.content.firstElementChild;
+    }
+    for (var i = 0; i < prods.length; i++) {
+      const myList = elementFromHtml(`
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a href = "F:/COMP-A-THON Project/prod_page.html" class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="`+prods[i].Link+`">
+          </a>
+          <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">`+prods[i].Product_Category+`</h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">`+prods[i].Product_Name+`</h2>
+              <p class="mt-1">`+prods[i].Price+`</p>
+          </div>
+      </div>`);
+      const rem = document.getElementById("product_1");
+      rem.appendChild(myList);
+    }
+
+   </script>
+
+</body>
+
+</html>

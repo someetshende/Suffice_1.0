@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Your Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Styles1.css">
+    <link rel="stylesheet" href="Styles3.css">
+  </head>
+  <body>
+
+    <!-- =============================== * navbar * ============================================ -->
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+          <img src="Images/Logo.jpg" alt="xyz" width="10%">
+          <span class="ml-3 text-xl">Suffice</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-white">Home</a>
+          <a class="mr-5 hover:text-white">Features</a>
+          <a class="mr-5 hover:text-white">How it work?</a>
+          <a class="mr-5 hover:text-white">Connect</a>
+        </nav>
+      </div>
+    </header>
+    <!-- =============================== * product-submission * ============================================ -->
+    <!-- <div class="bg-gray-300 py-6 sm:py-8 lg:py-12" id="main_div">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <!-- text - start -->
+          <div class="mb-10 md:mb-16">
+            <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Product Details</h2>
+            <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Requried information for listing your product.</p>
+          </div>
+          <!-- text - end -->
+
+          <!-- form - start -->
+          <form class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto" id = "contactForm">
+            <div class="alert">Your message sent</div>
+            <div class="sm:col-span-2">
+              <label for="product" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Product Name </label>
+              <input name="product" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" placeholder="Enter product name.." id="name"/>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="category" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Category</label>
+              <input name="category" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" placeholder="Enter category.." id="emailid" />
+            </div>
+
+
+            <div class="sm:col-span-2">
+              <label for="price" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Price (according to time)</label>
+              <input name="price" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" placeholder="Enter price/time such as 'Rs.20/hr'" id="msgContent"/>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="description" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Description</label>
+              <input type="textarea" name="description" class="w-full h-64 bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" placeholder="Enter product description in less than 50 words.." id="price" >
+            </div>
+
+            <!-- <div class="sm:col-span-2">
+              <label for="input" class="inline-block text-gray-800 text-sm sm:text-base mb-2" for="multiple_files">Upload video (atleast 1)</label>
+              <input name="input" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" id="multiple_files" type="file" multiple=""/>
+            </div> -->
+
+            <div class="sm:col-span-2">
+                <label for="Photo" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Upload Photo</label>
+                <input name="Photo" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" placeholder="Enter the link of the photo." id="plink"/>
+            </div>
+
+            <div class="sm:col-span-2 flex justify-between items-center">
+              <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3" type="submit" >Submit</button>
+              <span class="text-gray-500 text-sm">*Required</span>
+            </div>
+
+            <p class="text-gray-400 text-xs">By signing up to our newsletter you agree to our <a href="#" class="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100">Privacy Policy</a>.</p>
+          </form
+
+        </div>
+      </div> -->
+
+  <!-- =============================== * footer * ============================================ -->
+      <footer id="footer">
+        <a href="https://www.instagram.com" class="social-icons fa-brands fa-instagram" ></a>
+        <a href="https://www.facebook.com" class="social-icons fa-brands fa-facebook" ></a>
+        <a href="https://www.twitter.com" class="social-icons fa-brands fa-twitter" ></a>
+        <a href="https://www.gmail.com" class="social-icons fa-solid fa-envelope" ></a>
+        <p>© Copyright Suffice</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="./mail.js"></script>
+    </body>
+</html>
